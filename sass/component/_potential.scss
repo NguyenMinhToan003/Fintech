@@ -1,0 +1,55 @@
+.potential {
+  background-color: $bg-light-alt;
+  .wrapper {
+    margin: 0 auto;
+    padding: 150px 15px 170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-left {
+    width: 470px;
+    &-title {
+      align-items: start;
+    }
+    &-text {
+      margin: 40px 0 50px;
+    }
+    &-button {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  &-right {
+    width: 570px;
+    &-question {
+      border-bottom: 1px solid #e7e5ea;
+      &-title {
+        padding-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & span {
+          padding: 10px 0;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 1.56;
+          letter-spacing: 0.4px;
+          color: $text-heading;
+        }
+      }
+      &:first-child {
+        border-bottom: 1px solid #886cff;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1023.98px) {
+  .potential {
+    .wrapper {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}

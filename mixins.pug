@@ -1,0 +1,84 @@
+mixin monthly-card(icon,title,pay,usd)
+  .header-view-monthly-card 
+    .header-view-monthly-card-icon 
+      img(src=icon, alt="icon-momthly-card")
+    .header-view-monthly-card-content 
+      .header-view-monthly-card-title #{title}
+      .header-view-monthly-card-pay #{pay}
+    .header-view-monthly-card-usd #{usd}
+    .header-view-monthly-card-paynow.gradient-purple|Pay Now
+
+mixin invest-card(number,title,text)
+  .invest-card 
+    .invest-card-number 
+      span #{number}
+      .invest-card-number-bg 
+    .invest-card-title #{title}
+    .invest-card-text #{text}
+    a.invest-card-link(href="#")
+      span|Learn more
+      img(src="./image/icon-arow-right.svg", alt="icon-arow-right")
+mixin trust-card(img,title)
+  .trust-card
+    .trust-card-icon 
+      img(src=img, alt="icon-trust-card")
+    .trust-card-title #{title}
+    .trust-card-text|Our payment processor Flutterwave is PADSS compliant satisfying the highest level of Security Audit available.
+mixin commited-bottom-card(img,title)
+  .commited-bottom-card 
+    .commited-bottom-card-img 
+      img(src=img, alt="icon-bottom-commited")
+    .commited-bottom-card-content 
+      .commited-bottom-card-title #{title}
+      .commited-bottom-card-text|Start Investing in your favorite public listed US company, a bundle of companies called an ETF.
+
+mixin setup-card(title,usd)
+  .setup-card 
+    .setup-card-title.text #{title}
+    .setup-card-usd.text-heading|$
+      span #{usd} 
+      |/mo
+    .setup-card-text.text-1|Best for new startups or businesses with occasional in-person sales
+    a(href="#").setup-card-link.button|Purchase Now
+    .setup-card-list.text-heading 
+      each item in ["Unlimited editable boards","Unlimited visitors","Custom templates","24/7 Support Online"]
+        .setup-card-item
+          .setup-card-img 
+            img(src="./image/icon-check.svg", alt="icon-checked")
+          span=item
+mixin apptoday-option-card(title)
+  .apptoday-option-card 
+    .apptoday-option-card-img 
+      img(src="./image/icon-pen.svg", alt="icon-pen")
+    .apptoday-option-card-title #{title}
+    .apptoday-option-card-text|We use state-of-the-art data encryption when handling your financial information and two-factor authentication (2FA) protection.
+mixin apptoday-lernmore-card(title)
+  .apptoday-lernmore-card 
+    .apptoday-lernmore-card-title #{title}
+    .apptoday-lernmore-card-text |From the ground up. We teach you the basics and get you started on your investment journey in no time.
+    a(href="#main").apptoday-lernmore-card-link
+      span|Learn more
+      img(src="./image/icon-arow-right.svg", alt="icon-arow-right") 
+mixin apptoday-statistic()
+  .apptoday-statistic 
+    .apptoday-statistic-pointer
+      .apptoday-statistic-pointer-img
+        img(src="./image/icon-arow-top-right-vector.svg", alt="icon-vector")
+      span|$58,75
+    .apptoday-statistic-bg1 
+    .apptoday-statistic-bg2
+    .apptoday-statistic-title|Statistic
+    .apptoday-statistic-date 
+      span|Weekly
+      span|Monthly
+      span|Last year
+    ul.apptoday-statistic-usd 
+      each item in ["$80,00","$60,00","$40,00","$20,00"]
+        li=item
+    ul.apptoday-statistic-times 
+      each item in ["3 July","4 July","5 July","6 July","7 July","8 July","9 July"]
+        li=item
+    .apptoday-statistic-button
+      button.button.apptoday-statistic-button1|Earning
+      button.button.apptoday-statistic-button2|Spending
+    

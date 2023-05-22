@@ -1,0 +1,118 @@
+.setup {
+  padding: 120px 15px;
+
+  &-text {
+    text-align: center;
+    margin: 30px 0 40px;
+  }
+  &-option {
+    margin: 0 auto 70px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 15px 22px;
+    border: 1px solid #e7e5ea;
+    border-radius: 6px;
+    &-1 {
+      padding: 10px;
+      border-radius: 6px;
+      width: calc(100% / 4 - 24px + 10px * 8);
+      transition: all 0.25s ease;
+    }
+    &-1:hover {
+      color: white;
+      background-color: $action-purple;
+    }
+  }
+  &-view {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: stretch;
+  }
+  &-card {
+    width: 370px;
+    padding: 35px 24px 75px;
+    border: 1px solid #e7e5ea;
+    border-radius: 10px;
+    transition: all 0.25s ease-out;
+    &-title {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.56;
+      text-align: center;
+      letter-spacing: 0.4px;
+    }
+    &-text {
+      font-size: 16px;
+      line-height: 1.62;
+      text-align: center;
+    }
+    &-usd {
+      margin: 10px 20px;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 1.28;
+      text-align: center;
+      letter-spacing: -1px;
+
+      & span {
+        font-size: 60px;
+      }
+    }
+    &-link {
+      display: block;
+      width: 100%;
+      margin: 40px 0 40px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: -0.3px;
+      text-align: center;
+    }
+    &-item {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      justify-content: stretch;
+      & span {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 1.45;
+        letter-spacing: -1px;
+      }
+    }
+    &-img {
+      width: 30px;
+      height: 30px;
+      border-radius: 100rem;
+      background-color: rgba(135, 108, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &-card:hover {
+    background-color: $action-purple;
+    .setup-card-title,
+    .setup-card-usd,
+    .setup-card-text,
+    .setup-card-list {
+      color: white;
+    }
+    .setup-card-link {
+      background-color: white;
+      color: $action-purple;
+    }
+    .setup-card-img {
+      opacity: 0.5;
+    }
+  }
+}
+@media screen and (max-width: 1200.98px) {
+  .setup-view {
+    flex-direction: column;
+  }
+}

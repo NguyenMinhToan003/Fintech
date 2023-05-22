@@ -1,0 +1,40 @@
+.header-view 
+
+  .header-view-left
+    .header-view-title|The modern way to invest in everything
+    .header-view-text|Pollock is the easiest way to access smarter investment options and earn returns. We make investing simple, accessible and affordable.
+    .header-view-download
+      a(href="#").header-view-download-chplay 
+        img(srcSet="./image/icon-chplay.png 2x", alt="icon-chplay")
+      a(href="#").header-view-download-chplay 
+        img(srcSet="./image/icon-apple.png 2x", alt="icon-chplay")
+
+  .header-view-right
+    .header-view-card-balance.gradient-purple 
+      .header-view-card-balance-title|Card balance
+      .header-view-card-balance-usd|$32,819.00
+      .header-view-card-balance-visa|Visa
+      .header-view-card-balance-info 
+        .header-view-card-balance-info-user|**** **** **** 1980
+        .header-view-card-balance-info-date|05/26
+    .header-view-earning 
+      .header-view-earning-title|Earning
+      .header-view-earning-usd|$21.,500.00
+      .header-view-earning-number
+        .header-view-earning-icon
+          img(src="./image/icon-arow-top-right.svg", alt="icon-earning")
+        span|12%
+      .header-view-earning-dots 
+        img(src="./image/icon-dots.svg", alt="icon-dots")
+    .header-view-avatar
+      .header-view-avatar-bg.gradident-orange 
+      img(srcSet="./image/header-avatar.png 2x", alt="header-avatar") 
+    .header-view-monthly
+      .header-view-monthly-title|Monthly payment
+        +monthly-card("./image/icon-electri.svg","Electricity","Pay before 15 July","$20,30")
+        +monthly-card("./image/icon-internet.svg","Internet","Pay before 15 July","$50,00")
+      .header-view-monthly-add
+        .header-view-monthly-add-title|Add
+        .header-view-monthly-add-icon 
+          img(src="./image/icon-plus.svg", alt="icon-plus")
+    
